@@ -4,7 +4,7 @@ Linear Raw is a high-performance Android application designed for photographers 
 
 ## ✨ New in v1.3.0 (v7)
 
-- **Universal RAW Support:** Now supports a wide range of RAW formats from major manufacturers including **Sony (.ARW), Nikon (.NEF), Canon (.CR2, .CR3), Fujifilm (.RAF), Olympus (.ORF), Panasonic (.RW2), Pentax (.PEF)**, and more.
+- **Universal RAW Support:** Now supports a wide range of RAW formats from major manufacturers including **Sony (.ARW), Nikon (.NEF), Canon (.CR2, .CR3), Fujifilm (.RAF), Olympus (.ORF), Panasonic (.RW2), Pentax (.PEF)**, and more. Featuring specialized black level handling for **Fujifilm RAF** files to ensure color accuracy across all sensor types.
 - **Improved Metadata Extraction:** Enhanced support for multi-brand EXIF and MakerNote data.
 - **DNG and JPEG Filtering:** Improved import logic to exclude DNG and JPEG files, focusing strictly on high-quality RAW source conversion.
 - **Refined UI:** Updated branding and interface to reflect universal RAW support and improved clarity.
@@ -17,6 +17,7 @@ Linear Raw is a high-performance Android application designed for photographers 
 - **Native RAW Engine:** High-speed decoding using a custom C++ layer powered by `LibRaw`, supporting hundreds of camera models.
 - **Calibration Precision:** Access to technical RAW data including Black/White levels, Camera Multipliers, and CFA (Bayer) patterns, with model-specific color matrices.
 - **HEVC Thumbnail Support:** Integrated `libde265` for decoding high-resolution HEVC previews embedded in modern RAW files.
+- **Diagnostic Pipeline:** Includes a "Core Trace" view for real-time telemetry and diagnostic log outputs during the conversion process.
 - **Modern UI:** A beautiful, responsive interface built with **Jetpack Compose**, featuring glassmorphism elements and full support for Dark Mode.
 - **History Tracking:** Keep track of previous conversions with a built-in history screen powered by Room Database.
 
@@ -47,7 +48,7 @@ Linear Raw is a high-performance Android application designed for photographers 
 4. Connect an Android device or start an emulator.
 5. Build and Run.
 
-## 📄 Licenses
+## 📄 Licenses & Privacy
 
 Linear Raw utilizes several open-source libraries:
 - **LibRaw:** Copyright (C) 2008-2025 LibRaw LLC. Licensed under CDDL 1.0 or LGPL 2.1.
@@ -55,6 +56,8 @@ Linear Raw utilizes several open-source libraries:
 - **Android Jetpack & Material Components:** Apache 2.0.
 - **Room, DataStore, & Lifecycle:** Apache 2.0.
 - **Coil:** Apache 2.0.
+
+For more information on how we handle your data, please see our [Privacy Policy](PRIVACY_POLICY.md).
 
 ---
 *Developed by Scott Loucks*
